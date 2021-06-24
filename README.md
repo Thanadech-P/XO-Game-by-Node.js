@@ -8,7 +8,6 @@ npm install express ejs method-override mongoose
 
 ## How to Run XO-Game (Node.js)
 ```
-cd XO-Game
 node index.js
 ```
 
