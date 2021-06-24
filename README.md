@@ -12,6 +12,9 @@ cd XO-Game
 node index.js
 ```
 
+## Start Game
+![Start-Game](startgame.png)
+
 ## Use MongoDB 
 ** Start MongoDB for Recording Games **
 
