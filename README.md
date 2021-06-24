@@ -40,10 +40,11 @@ node index.js
   - check if X , O , "" for display
 
 ## How to Win
-1. 3x3
+### 3x3
+![3x3](3x3.png)
 
+### 5x5
+![5x5](5x5.png)
 
-2. 5x5
-
-
-3. 7x7
+### 7x7
+![7x7](7x7.png)
