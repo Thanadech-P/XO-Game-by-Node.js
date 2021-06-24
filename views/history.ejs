@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+     
+    <div class="winning-message2 show">
+        <h2 class="player">History</h2>   
+    <a href="/">Home</a>
+
+    <center>
+    <% for(let rp of replay) { %>
+        <div class="showhis">
+        <b>Winner is : <%= rp.result %>,</b>
+        <% if(rp.size === 9) { %>
+            <label>Size : 3x3</label>
+       <% } %>
+   
+        <% if(rp.size === 25) { %>
+            <label>Size : 5x5</label>
+       <% } %>
+        <% if(rp.size === 49) { %>
+            <label>Size : 7x7</label>
+       <% } %>
+        
+        <form action="/history/<%= rp._id %>?_method=DELETE" method="POST">
+            <button class="">Delete</button>
+            <a href="/history/<%= rp._id %>">Replay</a> <hr>
+        </form>
+    <% } %> 
+</center>
+</div>
+</body>
+</html>

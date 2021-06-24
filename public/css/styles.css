@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+.player {
+  text-align: center;
+}
+
+.home{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.showhis {
+  margin-bottom: 10px;
+}
+
+.board {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.size3, .size9 {
+  grid-template-columns: repeat(3, auto)
+}
+
+.size5, .size25 {
+  grid-template-columns: repeat(5, auto)
+}
+
+.size7, .size49 {
+  grid-template-columns: repeat(7, auto)
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 3em;
+}
+
+.red, .X {
+  color: red;
+}
+.O {
+  color: blue;
+}
+
+
+.cell.x,
+.cell.circle {
+  cursor: not-allowed;
+}
+
+
+
+.winning-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  flex-direction: column;
+}
+
+.winning-message2 {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  flex-direction: column;
+}
+
+
+a:active, a:visited, a:link {
+  color: black;
+}
+
+
+.winning-message button, .winning-message a,.winning-message2 button, .winning-message2 a {
+  font-size: 3rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: .25em .5em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.winning-message button:hover, .winning-message a:hover,.winning-message2 button:hover, .winning-message2 a:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.btn-home {
+  font-size: 2rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: .25em .5em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-home:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.winning-message.show {
+  display: flex;
+}
+
+.winning-message2.show {
+  display: flex;
+}
