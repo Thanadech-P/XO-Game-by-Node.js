@@ -18,7 +18,7 @@ node index.js
 ** Start MongoDB for Recording Games **
 
 ## Design
-- XO-Game for 2 Player
+- XO-Game for 1 Player and 2 Player
 - Size Game 3x3, 4x4, 5x5, 6x6, 7x7, 8x8, 9x9, 10x10 (where you have to place your size consecutive to win)
 - Every time you play Playback will also be recorded.
 - Every click will check the winning pattern.
